@@ -43,9 +43,10 @@ def htop_view(request):
     response_content = f"""
     <html>
         <body>
-            <h2>Name: {name}</h2>
+            <h3>Name: {name}</h3>
             <h3>User: {username}</h3>
-            <p>Server Time (IST): {server_time}</p>
+            <h3>Server Time (IST): {server_time}</h3>
+            <h3>TOP output : </h3>
             <pre>{top_header}</pre>
             <pre>{process_output}</pre>
         </body>
